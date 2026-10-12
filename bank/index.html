@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank simulator</title>
+</head>
+<body>
+    <p>Balance: $<span id="balance">500.00</span></p>
+
+<label for="amount">Amount:</label>
+<input id="amount" type="number" step="0">
+
+<label for="action">Transaction:</label>
+<select id="action">
+  <option value="deposit">Deposit</option>
+  <option value="withdraw">Withdraw</option>
+  <option value="transfer">Transfer to savings</option>
+</select>
+   <p>Savings balance: $<span id="savingsBalance">0.00</span></p>
+<button id="transactButton">Submit transaction</button>
+<p id="message"></p>
+<script src="index.js"></script>
+</body>
+</html>
